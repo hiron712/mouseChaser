@@ -1,0 +1,42 @@
+@import "mixin";
+body{
+	margin: 0;
+	padding: 0;
+}
+section{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000000;
+	background-color: #f4f4f4;
+	&:nth-child(2n){
+		background-color: #ffffff;
+	}
+	div{
+		text-align: center;
+	}
+	.num{
+		font-size: 6rem;
+		text-align: center;
+	}
+	a{
+		display: inline-block;
+	}
+}
+
+#mouseChaser{
+	width: 2rem;
+	height: 2rem;
+	background-color: #000000;
+	border-radius: 50%;
+	position: fixed;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+	@include transition();
+	&.hover{
+		width: 6rem;
+		height: 6rem;
+	}
+}
