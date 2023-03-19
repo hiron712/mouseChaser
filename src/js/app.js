@@ -1,6 +1,5 @@
-// import simpleSmoothScroll from "./simpleSmoothScroll";
+import '../sass/style.scss'
 import mouseChaser from "./mouseChaser";
-
 function init(){
   new mouseChaser({
     deceleration : 0.2
